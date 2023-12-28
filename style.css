@@ -319,7 +319,7 @@ a {
   }
 }
 @media (max-width: 480px) {
-  .nav-link:not(:lastchild) {
+  .nav-link:not(:last-child) {
     display: none;
   }
   .header-title {
