@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter Tight", sans-serif;
+}
+:root {
+  --default: #234f1e;
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  padding: 80px 0;
+}
+/* Nav Bar */
+.row {
+  padding: 0 16px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.nav {
+  width: 100%;
+  height: 80px;
+}
+.nav-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.nav-logo {
+  font-size: 24px;
+  color: var(--default);
+}
+.nav-link {
+  margin: 0 8px;
+  color: var(--default);
+}
+.nav-link-button {
+  padding: 8px 12px;
+  background-color: var(--default);
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+/* header */
+.header-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+.header-title {
+  font-size: 36px;
+}
+.header-button {
+  background-color: var(--default);
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.header-image {
+  max-width: 100%;
+}
+/* product */
+#products {
+  background-color: #f6f6f6;
+}
+.products-title,
+.features-title,
+.reviews-title,
+.pricing-title {
+  font-size: 32px;
+}
+.products-para,
+.features-para,
+.reviews-para,
+.pricing-para {
+  max-width: 600px;
+  lign-height: 1.5;
+}
+.products-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+.products-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  width: calc(100% / 4);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.card-icon {
+  background-color: var(--default);
+  color: white;
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  border-radius: 50%;
+}
+.card-title {
+  font-size: 24px;
+  dont-weight: 500;
+}
+.card-para {
+  font-size: 14px;
+  line-height: 1.5;
+}
+/* feature */
+.features-row,
+.reviews-row,
+.pricing-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+.feature {
+  display: flex;
+  gap: 64px;
+  margin-top: 64px;
+  max-width: 800px;
+}
+.feature-image {
+  width: 50%;
+}
+.feature-wrapper {
+  dispay: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  align-items: start;
+  gap: 8px;
+  line-height: 1.5;
+}
+.feature-title {
+  font-size: 24px;
+}
+.feature-link {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--default);
+  transition: 200ms;
+  padding-bottom: 2px;
+}
+.feature-link:hover {
+  border-bottom: 2px solid var(--default);
+}
+/* review */
+#reviews {
+  background-color: #f6f6f6;
+}
+.review {
+  display: flex;
+  max-width: 650px;
+  height: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 32px;
+}
+.review-wrapper,
+.review-credit {
+  width: 50%;
+}
+.review-wrapper {
+  background-color: var(--default);
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 32px;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+}
+.review-credit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background-color: white;
+}
+.review-image {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.review-rating {
+  color: #fcc470;
+  font-size: 8px;
+  margin-top: 4px;
+}
+.review-name {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+.review-occupation {
+  font-size: 12px;
+}
+/* pricing */
+.pricing-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.pricing-para {
+  margin-bottom: 40px;
+}
+.plan {
+  widht: 100%;
+  height: 500px;
+  max-width: 310px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
+  padding: 32px 100px;
+}
+.plan-title {
+  font-size: 28px;
+  color: var(--default);
+}
+.plan-icon {
+  font-size: 48px;
+  color: var(--default);
+}
+.plan-price {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--default);
+}
+.plan-features {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  gap: 16px;
+}
+.plan-feature {
+  font-size: 14px;
+  font-weight: 500;
+}
+.plan-button {
+  margin-top: 32px;
+  border: none;
+  background-color: var(--default);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+/* footer
+ */
+.footer {
+  height: 64px;
+  background-color: var(--default);
+  color: white;
+}
+.footer-row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-logo {
+  font-size: 18px;
+  font-weight: 500;
+}
+.footer-link {
+  margin: 0 8px;
+  color: white;
+  font-size: 14px;
+}
+@mwdia (max-width:768px) {
+  .nav-link,
+  .nav-link-button,
+  .header-para {
+    font-size: 14px;
+  }
+  .header-title {
+    font-size: 32px;
+  }
+  .header-button {
+    font-size: 12px;
+  }
+  .card {
+    width: 50%;
+  }
+  .feature-para {
+    font-size: 14px;
+  }
+  .review-wrapper {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .nav-link:not(:lastchild) {
+    display: none;
+  }
+  .header-title {
+    font-size: 24px;
+  }
+  .header-para {
+    font-size: 14px;
+  }
+  .products-title,
+  .features-title,
+  .reviews-title,
+  .pricing-title {
+    font-size: 24px;
+  }
+  .products-para,
+  .features-para,
+  .reviews-para,
+  .pricing-para {
+    font-size: 14px;
+  }
+  .card {
+    width: 100%;
+    padding: 20px;
+  }
+  .card-title {
+    font-size: 20px;
+  }
+  .card-para {
+    font-size: 12px;
+  }
+  .feature {
+    flex-direction: column;
+  }
+  .feature:last-child {
+    flex-direction: column-reverse;
+  }
+  .feature-image {
+    width: 100%;
+  }
+  .feature-wrapper {
+    align-items: center;
+    text-align: center;
+  }
+  .review {
+    flex-direction: column;
+    height: 400px;
+    width: 100%;
+  }
+  .review-text,
+  .review-credit {
+    width: 100%;
+    height: 50%;
+  }
+  .footer-logo {
+    display: none;
+  }
+  .footer-row {
+    justify-content: center;
+  }
+  .footer-link {
+    margin: 0 4px;
+  }
+}
